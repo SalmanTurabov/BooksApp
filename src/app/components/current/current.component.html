@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div *ngIf="book" class="book">
+    <img src="{{ book.image }}" alt="" class="book__img">
+    <p class="book__name">{{ book.name }}</p>
+    <p class="book__author">Author: {{ book.author }}</p>
+    <p class="book__year">Year: {{ book.year }}</p>
+    <button class="book__btn" (click)="goToStore()">Купить за {{ book.price }}</button>
+  </div>
+</div>
